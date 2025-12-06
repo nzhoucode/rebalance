@@ -4,7 +4,7 @@ This project compares simple portfolio baselines with two reinforcement-learning
 
 All methods are evaluated on:
 
-- A strict 20% chronological test window, which includes the 2022 tech-sector drawdown, an unusually difficult out-of-sample period for concentrated tech portfolios.
+- A strict 20% chronological test window, which includes the 2022 tech-sector drawdown, an unusually difficult out-of-sample period for concentrated tech portfolios
 - The full time period, which helps visualize long-run cumulative performance
 
 ## Policies
