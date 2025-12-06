@@ -4,7 +4,7 @@ This project compares simple portfolio baselines with two reinforcement-learning
 
 All methods are evaluated on:
 
-- A strict 20% chronological test window, which includes the early 2020 COVID market crash  
+- A strict 20% chronological test window, which includes the 2022 tech-sector drawdown, an unusually difficult out-of-sample period for concentrated tech portfolios.
 - The full time period, which helps visualize long-run cumulative performance
 
 ## Policies
@@ -18,10 +18,10 @@ Implements three benchmark strategies:
 - Monthly Rebalance (every 21 trading days)
 
 ### mdp.ipynb
-Implements the full regime-based MDP system.
+Implements regime-based Markov Decision Process Value Iteration.
 
 ### qlearning.ipynb  
-Implements the full regime-based Q-Learning system.
+Implements regime-based Q-Learning.
 
 ## Methodology Summary
 
@@ -67,10 +67,10 @@ Run the notebooks in this order:
 
 ## Interpretation Notes
 
-- The test window includes the February–March 2020 COVID crash, making it an extremely challenging out-of-sample environment.  
-- Buy-and-Hold often performs strongly because equities rise over long horizons.  
-- Regime-only RL methods (Value Iteration and Q-Learning) have limited predictive power and may underperform during crisis periods.
-- Full-period plots help interpret long-run dynamics but do not influence model training.
+- The test window covers late 2021–2023, dominated by the 2022 tech-stock crash, where mega-cap tech declined sharply due to rising interest rates and macro tightening. This makes the test set intentionally adversarial for risk-on strategies.
+- Buy-and-Hold often performs well on full-period plots because tech experienced strong long-term appreciation (2015–2021 and 2023 rebound).
+- Regime-only RL policies (Value Iteration and Q-Learning) are simple, interpretable, but lack predictive features and cannot anticipate sharp regime breaks like 2022.
+- Full-period plots are included for intuition only; all final evaluations use the strict test window.
 
 ## Future Extensions
 
