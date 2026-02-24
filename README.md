@@ -1,6 +1,6 @@
 # Portfolio Rebalancing using Reinforcement Learning (CS221 Final Project)
 
-This project compares simple portfolio baselines with two reinforcement-learning approaches (Value Iteration and Q-Learning) using daily returns for five tech stocks (AAPL, MSFT, AMZN, GOOGL, META) starting from 2015-01-01.
+This project compares simple portfolio baselines with two classical reinforcement-learning approaches (Value Iteration and Q-Learning) using daily returns for five tech stocks (AAPL, MSFT, AMZN, GOOGL, META) starting from 2015-01-01.
 
 All methods are evaluated on:
 
